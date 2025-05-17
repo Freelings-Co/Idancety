@@ -27,22 +27,22 @@ const Registration = () => {
 
   const registrationInfo = {
     whoCanApply: [
-      'Danu00e7arinos de todos os estilos entre 16 e 35 anos',
-      'Residentes em qualquer regiu00e3o do pau00eds',
-      'Com ou sem experiu00eancia profissional pru00e9via',
-      'Solo ou em grupos de atu00e9 5 pessoas'
+      'Dançarinos de todos os estilos entre 16 e 35 anos',
+      'Residentes em qualquer região do país',
+      'Com ou sem experiência profissional prévia',
+      'Solo ou em grupos de até 5 pessoas'
     ],
     timeline: [
-      'Inscriu00e7u00f5es abertas de 15/05/2025 a 15/07/2025',
-      'Pru00e9-seleu00e7u00e3o: Agosto/2025',
-      'Audiu00e7u00f5es presenciais: Setembro/2025',
+      'Inscrições abertas de 15/05/2025 a 15/07/2025',
+      'Pré-seleção: Agosto/2025',
+      'Audições presenciais: Setembro/2025',
       'Bootcamp: Outubro/2025',
       'Reality + Shows: Novembro-Dezembro/2025'
     ],
     whatToSubmit: [
-      'Vu00eddeo de 1-3 minutos mostrando sua danu00e7a (qualquer estilo)',
-      'Breve texto sobre sua histu00f3ria com a danu00e7a',
-      'Informau00e7u00f5es bu00e1sicas de contato'
+      'Vídeo de 1-3 minutos mostrando sua dança (qualquer estilo)',
+      'Breve texto sobre sua história com a dança',
+      'Informações básicas de contato'
     ]
   };
 
@@ -77,7 +77,7 @@ const Registration = () => {
               </ul>
               
               <a href="#" className="btn btn-primary registration-cta">
-                FAZER MINHA INSCRIu00c7u00c3O AGORA
+                FAZER MINHA INSCRIÇÃO AGORA
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Registration = () => {
           <div className="registration-visual animate-on-scroll">
             <div className="registration-form-visual">
               <div className="form-header">
-                <h4>IDANCETY | INSCRIu00c7u00c3O 2025</h4>
+                <h4>IDANCETY | INSCRIÇÃO 2025</h4>
               </div>
               <div className="form-body">
                 <div className="form-group">
@@ -101,26 +101,26 @@ const Registration = () => {
                   <div className="input-placeholder"></div>
                 </div>
                 <div className="form-group">
-                  <label>Estilo de Danu00e7a</label>
+                  <label>Estilo de Dança</label>
                   <div className="input-placeholder"></div>
                 </div>
                 <div className="form-group">
-                  <label>Link do Vu00eddeo</label>
+                  <label>Link do Vídeo</label>
                   <div className="input-placeholder"></div>
                 </div>
                 <div className="form-group">
-                  <label>Sua Histu00f3ria com a Danu00e7a</label>
+                  <label>Sua História com a Dança</label>
                   <div className="textarea-placeholder"></div>
                 </div>
               </div>
               <div className="form-footer">
-                <div className="submit-button">ENVIAR INSCRIu00c7u00c3O</div>
+                <div className="submit-button">ENVIAR INSCRIÇÃO</div>
               </div>
             </div>
             
             <div className="registration-countdown">
               <div className="countdown-header">
-                <h4>INSCRIu00c7u00d5ES ENCERRAM EM:</h4>
+                <h4>INSCRIÇÕES ENCERRAM EM:</h4>
               </div>
               <div className="countdown-timer">
                 <div className="countdown-item">
