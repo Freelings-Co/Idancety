@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500" fill="none">
+  <path d="M200 50C211.046 50 220 41.0457 220 30C220 18.9543 211.046 10 200 10C188.954 10 180 18.9543 180 30C180 41.0457 188.954 50 200 50Z" fill="#BA8CFF"/>
+  <path d="M200 50L190 100L210 100L200 50Z" fill="#BA8CFF"/>
+  <path d="M190 100L170 200L180 250L160 350L180 400L200 450L220 400L240 350L220 250L230 200L210 100" fill="none" stroke="#C4FF4D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 200L120 150" stroke="#C4FF4D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M230 200L280 150" stroke="#C4FF4D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M180 400L140 480" stroke="#BA8CFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 400L260 480" stroke="#BA8CFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M160 350L100 320" stroke="#BA8CFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240 350L300 320" stroke="#BA8CFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,441 @@
+.ecosystem-section {
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ecosystem-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.ecosystem-subtitle.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ecosystem-subtitle h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--cyber-lime);
+}
+
+.ecosystem-subtitle p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.ecosystem-programs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.ecosystem-program {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  border: 1px solid rgba(77, 77, 77, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.ecosystem-program.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ecosystem-program::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.ecosystem-program.active::before {
+  background: var(--cyber-lime);
+}
+
+.ecosystem-program.future::before {
+  background: var(--vapor-violet);
+}
+
+.ecosystem-program:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.program-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(77, 77, 77, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.program-icon .icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-content {
+  flex: 1;
+}
+
+.program-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.active .program-content h4 {
+  color: var(--cyber-lime);
+}
+
+.future .program-content h4 {
+  color: var(--vapor-violet);
+}
+
+.program-content p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.program-status {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.active .status-indicator {
+  background-color: var(--cyber-lime);
+  box-shadow: 0 0 10px var(--cyber-lime);
+  animation: pulse 2s infinite;
+}
+
+.future .status-indicator {
+  background-color: var(--vapor-violet);
+  opacity: 0.7;
+}
+
+.status-text {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.impact-areas-container {
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  border: 1px solid rgba(77, 77, 77, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.impact-areas-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.impact-areas-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--cyber-lime);
+}
+
+.impact-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.impact-area-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.impact-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--cyber-lime);
+  flex-shrink: 0;
+}
+
+.impact-area-item:nth-child(odd) .impact-dot {
+  background-color: var(--vapor-violet);
+}
+
+.ecosystem-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Institute Section */
+.institute-section, .befit-section {
+  margin-top: 5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.institute-section.animate, .befit-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.institute-title, .befit-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.institute-subtitle, .befit-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--grid-gray);
+}
+
+.institute-content, .befit-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.institute-info p, .befit-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.institute-features, .befit-features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.institute-features li, .befit-features li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(77, 77, 77, 0.3);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.institute-features li::before, .befit-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.1rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.institute-features li::before {
+  background-color: var(--vapor-violet);
+}
+
+.befit-features li::before {
+  background-color: var(--cyber-lime);
+}
+
+.institute-results h5, .befit-benefits h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.institute-results h5 {
+  color: var(--vapor-violet);
+}
+
+.befit-benefits h5 {
+  color: var(--cyber-lime);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.result-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(186, 140, 255, 0.2);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.result-icon::before {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--vapor-violet);
+  font-size: 0.8rem;
+}
+
+.befit-benefits ul {
+  list-style: none;
+}
+
+.befit-benefits li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.befit-benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 6px;
+  height: 6px;
+  background-color: var(--cyber-lime);
+  border-radius: 50%;
+}
+
+.institute-visual, .befit-visual {
+  position: relative;
+}
+
+.institute-image, .befit-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(77, 77, 77, 0.5);
+}
+
+.institute-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/institute-image.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.befit-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/befit-image.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.institute-image:hover::before, .befit-image:hover::before {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.institute-overlay, .befit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0));
+}
+
+@media (max-width: 992px) {
+  .institute-content, .befit-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .befit-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .ecosystem-subtitle h3 {
+    font-size: 1.3rem;
+  }
+  
+  .ecosystem-subtitle p {
+    font-size: 1rem;
+  }
+  
+  .institute-title, .befit-title {
+    font-size: 1.5rem;
+  }
+  
+  .institute-subtitle, .befit-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}

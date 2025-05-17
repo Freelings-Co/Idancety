@@ -1,0 +1,257 @@
+.about-section {
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.about-text.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.about-cta {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out 0.3s;
+}
+
+.about-cta.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.document-icon {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background-color: var(--text-white);
+  position: relative;
+  border-radius: 2px;
+}
+
+.document-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 0;
+  border-color: transparent var(--neon-noir) transparent transparent;
+}
+
+.about-visual {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s ease-out 0.2s;
+}
+
+.about-visual.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-card {
+  height: 350px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.about-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.about-card:hover .about-card-inner {
+  transform: rotateY(180deg);
+}
+
+.about-card-front, .about-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, rgba(196, 255, 77, 0.1), rgba(186, 140, 255, 0.1));
+  border-radius: 10px;
+}
+
+.about-icon {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(77, 77, 77, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-icon::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('../assets/images/dance-icon.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.icon-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--cyber-lime), var(--vapor-violet));
+  opacity: 0.5;
+  animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.about-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--cyber-lime), var(--vapor-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.about-card-front p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.about-card-back ul {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+}
+
+.about-card-back li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(77, 77, 77, 0.5);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-card-back li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--cyber-lime);
+  border-radius: 50%;
+}
+
+.about-card-back li:nth-child(odd)::before {
+  background-color: var(--vapor-violet);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .about-visual {
+    order: -1;
+  }
+  
+  .about-card {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-intro {
+    font-size: 1.1rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+  }
+  
+  .about-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
