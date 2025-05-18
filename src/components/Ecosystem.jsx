@@ -180,6 +180,9 @@ const Ecosystem = () => {
             
             <div className="institute-visual">
               <div className="institute-image glow-effect">
+
+
+                
                 <div className="institute-overlay"></div>
               </div>
             </div>

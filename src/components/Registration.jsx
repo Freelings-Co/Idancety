@@ -50,7 +50,7 @@ const Registration = () => {
     <section id="inscricoes" className="section registration-section" ref={sectionRef}>
       <div className="grid-background"></div>
       <div className="container">
-        <h2 className="section-title animate-on-scroll">INSCRIu00c7u00d5ES ABERTAS</h2>
+        <h2 className="section-title animate-on-scroll">INSCRIÇÕES ABERTAS</h2>
         
         <div className="registration-content">
           <div className="registration-info animate-on-scroll">
@@ -62,7 +62,7 @@ const Registration = () => {
                 ))}
               </ul>
               
-              <h3 className="registration-subtitle">ATu00c9 QUANDO:</h3>
+              <h3 className="registration-subtitle">ATÉ QUANDO:</h3>
               <ul className="registration-list timeline-list">
                 {registrationInfo.timeline.map((item, index) => (
                   <li key={index} className="timeline-item">{item}</li>
