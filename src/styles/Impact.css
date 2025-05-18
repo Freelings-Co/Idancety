@@ -14,7 +14,7 @@
 }
 
 .impact-subtitle.animate {
-  opacity: 1;
+  opacity: 1; 
   transform: translateY(0);
 }
 
@@ -217,17 +217,34 @@
   position: relative;
 }
 
-.impact-image {
+/* Base image styles */
+.impact-cell > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.impact-image-image-1,
+.impact-image-image-2,
+.impact-image-image-3,
+.impact-image-image-4 {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: all 0.5s ease;
   position: relative;
 }
 
-.impact-cell:hover .impact-image {
-  transform: scale(1.1);
+.impact-cell:hover .impact-image-image-1,
+.impact-cell:hover .impact-image-image-2,
+.impact-cell:hover .impact-image-image-3,
+.impact-cell:hover .impact-image-image-4 {
+  transform: scale(1.05);
 }
 
 .image-overlay {
@@ -236,23 +253,49 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
-.image-1 {
-  background-image: url('../assets/images/impact-1.jpg');
+.impact-cell:hover .image-overlay {
+  opacity: 0.6;
 }
 
-.image-2 {
-  background-image: url('../assets/images/impact-2.jpg');
+/* Specific image styles */
+.impact-image-image-1 {
+  background-image: url('../assets/images/YoungUrban.webp');
+  background-color: #1a1a1a; /* Fallback color */
 }
 
-.image-3 {
-  background-image: url('../assets/images/impact-3.jpg');
+.impact-image-image-2 {
+  background-color: #222222; /* Fallback color */
+  background-image: url('../assets/images/impact2.webp');
 }
 
-.image-4 {
-  background-image: url('../assets/images/impact-4.jpg');
+.impact-image-image-3 {
+  background-color: #2a2a2a; /* Fallback color */
+  background-image: url('../assets/images/impact3.webp');
+}
+
+.impact-image-image-4 {
+  background-color: #1f1f1f; /* Fallback color */
+  background-image: url('../assets/images/impact4.webp');
+}
+
+
+/* Ensure images maintain aspect ratio on all devices */
+@media (max-width: 992px) {
+  .impact-image {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-image {
+    min-height: 180px;
+  }
 }
 
 @media (max-width: 992px) {

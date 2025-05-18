@@ -69,22 +69,22 @@ const Impact = () => {
         <div className="impact-visual animate-on-scroll">
           <div className="impact-grid">
             <div className="impact-cell">
-              <div className="impact-image image-1">
+              <div className="impact-image-image-1">
                 <div className="image-overlay"></div>
               </div>
             </div>
             <div className="impact-cell">
-              <div className="impact-image image-2">
+              <div className="impact-image-image-2">
                 <div className="image-overlay"></div>
               </div>
             </div>
             <div className="impact-cell">
-              <div className="impact-image image-3">
+              <div className="impact-image-image-3">
                 <div className="image-overlay"></div>
               </div>
             </div>
             <div className="impact-cell">
-              <div className="impact-image image-4">
+              <div className="impact-image-image-4">
                 <div className="image-overlay"></div>
               </div>
             </div>
