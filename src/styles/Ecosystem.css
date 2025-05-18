@@ -373,11 +373,8 @@
   transition: all 0.3s ease;
 }
 
-.befit-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.befit-image {
+  position: relative;
   width: 100%;
   height: 100%;
   background-image: url('../assets/images/befit-dance.webp');
@@ -388,7 +385,12 @@
   transition: all 0.3s ease;
 }
 
-.institute-image:hover::before, .befit-image:hover::before {
+.institute-image:hover::before {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.befit-image:hover {
   opacity: 0.9;
   transform: scale(1.05);
 }
