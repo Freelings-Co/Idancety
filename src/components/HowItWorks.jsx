@@ -139,7 +139,7 @@ const HowItWorks = () => {
         
         <div className="web-series animate-on-scroll">
           <h3 className="web-series-title">
-            <span className="vapor-violet-text">3B.</span> {webSeriesInfo.title}
+            <span className="vapor-violet-text"></span> {webSeriesInfo.title}
           </h3>
           <h4 className="web-series-subtitle">{webSeriesInfo.subtitle}</h4>
           
