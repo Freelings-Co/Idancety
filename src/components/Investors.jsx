@@ -81,7 +81,7 @@ const Investors = () => {
                 <div className="tier">
                   <div className="tier-header">
                     <h5>PLATINUM</h5>
-                    <div className="tier-value">R$ 500K+</div>
+                    
                   </div>
                   <div className="tier-benefits">
                     <ul>
@@ -97,7 +97,7 @@ const Investors = () => {
                 <div className="tier">
                   <div className="tier-header">
                     <h5>GOLD</h5>
-                    <div className="tier-value">R$ 250K+</div>
+                    
                   </div>
                   <div className="tier-benefits">
                     <ul>
@@ -112,7 +112,7 @@ const Investors = () => {
                 <div className="tier">
                   <div className="tier-header">
                     <h5>SILVER</h5>
-                    <div className="tier-value">R$ 100K+</div>
+                        
                   </div>
                   <div className="tier-benefits">
                     <ul>

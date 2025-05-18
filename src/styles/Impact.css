@@ -91,8 +91,8 @@
 .impact-icon::before {
   content: '';
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,19 +100,19 @@
 }
 
 .impact-area:nth-child(1) .impact-icon::before {
-  background-image: url('../assets/images/opportunity-icon.svg');
+  background-image: url('../assets/images/opportunity.png');
 }
 
 .impact-area:nth-child(2) .impact-icon::before {
-  background-image: url('../assets/images/connection-icon.svg');
+  background-image: url('../assets/images/connection.png');
 }
 
 .impact-area:nth-child(3) .impact-icon::before {
-  background-image: url('../assets/images/development-icon.svg');
+  background-image: url('../assets/images/development.png');
 }
 
 .impact-area:nth-child(4) .impact-icon::before {
-  background-image: url('../assets/images/expansion-icon.svg');
+  background-image: url('../assets/images/expansion.png');
 }
 
 .icon-inner {

@@ -128,7 +128,13 @@ const Ecosystem = () => {
               </div>
             ))}
           </div>
-          <a href="#" className="btn btn-outline ecosystem-cta">
+          
+          {/* Countdown Timer */}
+          <div className="animate-on-scroll" style={{ marginTop: '2rem' }}>
+            <h4 className="impact-areas-title" style={{ marginBottom: '1rem' }}>PRÓXIMO EVENTO EM:</h4>
+                      </div>
+          
+          <a href="#" className="btn btn-outline ecosystem-cta" style={{ marginTop: '2rem' }}>
             <i className="document-icon"></i>
             BAIXAR APRESENTAÇÃO PARA INVESTIDORES
           </a>
@@ -137,7 +143,7 @@ const Ecosystem = () => {
         {/* Instituto Dance2Change Section */}
         <div className="institute-section animate-on-scroll">
           <h3 className="institute-title">
-            <span className="vapor-violet-text">5B.</span> INSTITUTO DANCE2CHANGE
+            <span className="vapor-violet-text"></span> INSTITUTO DANCE2CHANGE
           </h3>
           <h4 className="institute-subtitle">BRAÇO SOCIAL DO IDANCETY</h4>
           

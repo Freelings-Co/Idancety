@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import '../styles/Registration.css';
+import CountdownTimer from './CountdownTimer';
 
 const Registration = () => {
   const sectionRef = useRef(null);
@@ -122,24 +123,7 @@ const Registration = () => {
               <div className="countdown-header">
                 <h4>INSCRIÇÕES ENCERRAM EM:</h4>
               </div>
-              <div className="countdown-timer">
-                <div className="countdown-item">
-                  <div className="countdown-value">60</div>
-                  <div className="countdown-label">DIAS</div>
-                </div>
-                <div className="countdown-item">
-                  <div className="countdown-value">12</div>
-                  <div className="countdown-label">HORAS</div>
-                </div>
-                <div className="countdown-item">
-                  <div className="countdown-value">45</div>
-                  <div className="countdown-label">MIN</div>
-                </div>
-                <div className="countdown-item">
-                  <div className="countdown-value">30</div>
-                  <div className="countdown-label">SEG</div>
-                </div>
-              </div>
+              <CountdownTimer targetDate="2025-07-18T23:59:59" />
             </div>
           </div>
         </div>

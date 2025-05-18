@@ -83,7 +83,7 @@
 .program-icon {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 10%;
   background-color: rgba(77, 77, 77, 0.2);
   display: flex;
   justify-content: center;
@@ -92,8 +92,9 @@
 }
 
 .program-icon .icon {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
+  background: url('../assets/images/IDLogo.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -376,13 +377,16 @@
 .befit-image {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 400px; /* Set a default height */
+  min-height: 400px;
   background-image: url('../assets/images/befit-dance.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid rgba(77, 77, 77, 0.5);
 }
 
 .institute-image:hover::before {
@@ -405,9 +409,25 @@
 }
 
 @media (max-width: 992px) {
-  .institute-content, .befit-content {
+  .institute-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .befit-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .befit-visual {
+    order: -1; /* Move image above content on mobile */
+    width: 100%;
+  }
+  
+  .befit-image {
+    height: 300px; /* Set a fixed height for the image on mobile */
+    min-height: 300px;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .results-grid {
@@ -441,5 +461,54 @@
 @media (max-width: 576px) {
   .impact-areas-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Countdown Timer Styles */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 1rem;
+  background: rgba(26, 26, 26, 0.7);
+  border-radius: 8px;
+  border: 1px solid rgba(77, 77, 77, 0.3);
+}
+
+.countdown-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cyber-lime);
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .countdown-item {
+    min-width: 70px;
+    padding: 0.8rem 0.5rem;
+  }
+  
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.7rem;
   }
 }
