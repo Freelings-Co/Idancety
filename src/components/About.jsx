@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <section id="sobre" className="section about-section" ref={aboutRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-about"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">O QUE É O IDANCETY?</h2>
         

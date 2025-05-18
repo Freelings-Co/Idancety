@@ -82,7 +82,7 @@ const Ecosystem = () => {
 
   return (
     <section id="ecossistema" className="section ecosystem-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-ecosystem"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">CONHEÇA O ID+</h2>
         
@@ -182,7 +182,7 @@ const Ecosystem = () => {
               <div className="institute-image glow-effect">
 
 
-                
+
                 <div className="institute-overlay"></div>
               </div>
             </div>

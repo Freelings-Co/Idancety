@@ -61,7 +61,7 @@ const Store = () => {
 
   return (
     <section id="loja" className="section store-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-store"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">LOJA IDANCETY</h2>
         

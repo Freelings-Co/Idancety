@@ -100,7 +100,7 @@ const HowItWorks = () => {
 
   return (
     <section id="como-funciona" className="section how-it-works-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-how"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">COMO FUNCIONA</h2>
         

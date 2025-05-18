@@ -35,7 +35,7 @@ const Investors = () => {
 
   return (
     <section id="investidores" className="section investors-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-investors"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">INVESTIDORES E PARCEIROS</h2>
         

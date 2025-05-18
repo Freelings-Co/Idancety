@@ -5,6 +5,27 @@ const Testimonials = () => {
   const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const testimonials = [
+    {
+      quote: "O IDANCETY mudou completamente minha visão sobre o que posso alcançar como artista. Mais que técnica, aprendi a transformar minha história pessoal em arte com propósito.",
+      author: "Mariana Silva",
+      role: "22 anos, Participante da Edição Piloto",
+      image: "testimonial-1.jpg"
+    },
+    {
+      quote: "Como mentor, vi jovens talentos com potencial incrível, mas sem oportunidades, transformarem-se em artistas completos em poucas semanas. O modelo do IDANCETY é revolucionário.",
+      author: "Ricardo Fernandes",
+      role: "Coreógrafo e Mentor",
+      image: "testimonial-2.jpg"
+    },
+    {
+      quote: "Investir no IDANCETY significa apostar na transformação cultural com bases sólidas e métricas claras. A combinação de propósito social e formato inovador cria um caso único no mercado.",
+      author: "Patrícia Mendonça",
+      role: "Investidora",
+      image: "testimonial-3.jpg"
+    }
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,28 +53,7 @@ const Testimonials = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  const testimonials = [
-    {
-      quote: "O IDANCETY mudou completamente minha visão sobre o que posso alcançar como artista. Mais que técnica, aprendi a transformar minha história pessoal em arte com propósito.",
-      author: "Mariana Silva",
-      role: "22 anos, Participante da Edição Piloto",
-      image: "testimonial-1.jpg"
-    },
-    {
-      quote: "Como mentor, vi jovens talentos com potencial incrível, mas sem oportunidades, transformarem-se em artistas completos em poucas semanas. O modelo do IDANCETY é revolucionário.",
-      author: "Ricardo Fernandes",
-      role: "Coreógrafo e Mentor",
-      image: "testimonial-2.jpg"
-    },
-    {
-      quote: "Investir no IDANCETY significa apostar na transformação cultural com bases sólidas e métricas claras. A combinação de propósito social e formato inovador cria um caso único no mercado.",
-      author: "Patrícia Mendonça",
-      role: "Investidora",
-      image: "testimonial-3.jpg"
-    }
-  ];
+  }, [testimonials.length]);
 
   const handleDotClick = (index) => {
     setActiveIndex(index);
@@ -61,7 +61,7 @@ const Testimonials = () => {
 
   return (
     <section id="depoimentos" className="section testimonials-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-testimonials"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">DEPOIMENTOS</h2>
         

@@ -48,7 +48,7 @@ const Registration = () => {
 
   return (
     <section id="inscricoes" className="section registration-section" ref={sectionRef}>
-      <div className="grid-background"></div>
+      <div className="grid-background-registration"></div>
       <div className="container">
         <h2 className="section-title animate-on-scroll">INSCRIÇÕES ABERTAS</h2>
         

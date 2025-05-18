@@ -4,6 +4,18 @@
   overflow: hidden;
 }
 
+.grid-background-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/grid-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .about-content {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -177,7 +189,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .about-card-front p {
