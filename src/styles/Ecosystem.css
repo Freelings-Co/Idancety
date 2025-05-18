@@ -83,7 +83,7 @@
 .program-icon {
   width: 60px;
   height: 60px;
-  border-radius: 10%;
+  border-radius: 50%;
   background-color: rgba(77, 77, 77, 0.2);
   display: flex;
   justify-content: center;
@@ -94,7 +94,8 @@
 .program-icon .icon {
   width: 60px;
   height: 60px;
-  background: url('../assets/images/IDLogo.webp');
+  background: url('../assets/images/IDLogo.jpg');
+  border-radius: 50%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -228,12 +229,19 @@
   margin-bottom: 0.5rem;
 }
 
-.institute-subtitle, .befit-subtitle {
+.institute-subtitle{
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  color: var(--grid-gray);
+  color: var(--vapor-violet);
 }
+.befit-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--cyber-lime);
+}
+
 
 .institute-content, .befit-content {
   display: grid;

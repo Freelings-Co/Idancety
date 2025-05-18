@@ -198,7 +198,7 @@ const Ecosystem = () => {
         {/* IDance2BEFIT Section */}
         <div className="befit-section animate-on-scroll">
           <h3 className="befit-title">
-            <span className="cyber-lime-text">5C.</span> IDANCE2BEFIT
+            <span className="cyber-lime-text"></span> IDANCE2BEFIT
           </h3>
           <h4 className="befit-subtitle">PROGRAMA DE FITNESS E BEM-ESTAR</h4>
           
