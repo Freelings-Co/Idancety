@@ -129,6 +129,9 @@ const Footer = () => {
           <div className="copyright">
             &copy; 2025 IDANCETY | ID+ City of Dancers Todos os direitos reservados
           </div>
+          <div className="copyright">
+            Desenvolvido Por Freelings Company 
+          </div>
         </div>
       </div>
     </footer>
