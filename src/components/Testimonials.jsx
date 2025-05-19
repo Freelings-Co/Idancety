@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import '../styles/Testimonials.css';
+import Testimonial1 from '../assets/images/testimonial-1.webp';
+import Testimonial2 from '../assets/images/testimonial-2.webp';
+import Testimonial3 from '../assets/images/testimonial-3.webp';
 
 const Testimonials = () => {
   const sectionRef = useRef(null);
@@ -10,19 +13,19 @@ const Testimonials = () => {
       quote: "O IDANCETY mudou completamente minha visão sobre o que posso alcançar como artista. Mais que técnica, aprendi a transformar minha história pessoal em arte com propósito.",
       author: "Mariana Silva",
       role: "22 anos, Participante da Edição Piloto",
-      image: "testimonial-1.jpg"
+      image: Testimonial1
     },
     {
       quote: "Como mentor, vi jovens talentos com potencial incrível, mas sem oportunidades, transformarem-se em artistas completos em poucas semanas. O modelo do IDANCETY é revolucionário.",
       author: "Ricardo Fernandes",
       role: "Coreógrafo e Mentor",
-      image: "testimonial-2.jpg"
+      image: Testimonial2
     },
     {
       quote: "Investir no IDANCETY significa apostar na transformação cultural com bases sólidas e métricas claras. A combinação de propósito social e formato inovador cria um caso único no mercado.",
       author: "Patrícia Mendonça",
       role: "Investidora",
-      image: "testimonial-3.jpg"
+      image: Testimonial3
     }
   ];
 
@@ -83,7 +86,7 @@ const Testimonials = () => {
                       <div className="author-image">
                         <div 
                           className="image" 
-                          style={{ backgroundImage: `url('../assets/images/${testimonial.image}')` }}
+                          style={{ backgroundImage: `url(${testimonial.image})` }}
                         ></div>
                       </div>
                       <div className="author-info">
