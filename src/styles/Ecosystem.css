@@ -13,6 +13,19 @@
   transition: all 0.8s ease-out;
 }
 
+.grid-background-ecosystem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(77, 77, 77, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 77, 77, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: -1;
+}
+
 .ecosystem-subtitle.animate {
   opacity: 1;
   transform: translateY(0);
