@@ -114,7 +114,7 @@ body {
 .btn-outline {
   background-color: transparent;
   color: var(--text-white);
-  border: 2px solid var(--grid-gray);
+  border: 2px solid var(--vapor-violet);
   box-shadow: 0 0 10px rgba(77, 77, 77, 0.5);
 }
 
@@ -172,10 +172,22 @@ body {
   .section-title {
     font-size: 2rem;
   }
-  
+
   .grid-container {
     grid-template-columns: 1fr;
   }
+
+  .btn-primary {
+    background-color: var(--vapor-violet);
+    color: var(--text-white);
+    box-shadow: 0 0 15px rgba(186, 140, 255, 0.5);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 25px rgba(186, 140, 255, 0.8);
+  }
+
+
 }
 
 /* Animation classes */
@@ -195,6 +207,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -205,6 +218,7 @@ body {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -215,9 +229,11 @@ body {
   0% {
     box-shadow: 1px 2px 8px 0 rgba(196, 255, 77, 0.4);
   }
+
   70% {
     box-shadow: 1px 2px 8px 10px rgba(196, 255, 77, 0);
   }
+
   100% {
     box-shadow: 1px 2px 8px 0 rgba(196, 255, 77, 0);
   }
@@ -230,7 +246,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     linear-gradient(rgba(77, 77, 77, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(77, 77, 77, 0.1) 1px, transparent 1px);
   background-size: 30px 30px;
@@ -258,4 +274,22 @@ body {
 
 .glow-effect:hover::after {
   opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+
+  @keyframes pulse {
+  0% {
+    box-shadow: 1px 2px 8px 0 rgba(186, 140, 255, 0.8);
+  }
+
+  70% {
+    box-shadow: 1px 2px 8px 10px rgba(196, 255, 77, 0);
+  }
+
+  100% {
+    box-shadow: 1px 2px 8px 0 rgba(196, 255, 77, 0);
+  }
+}
+
 }
