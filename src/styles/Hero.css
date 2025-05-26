@@ -20,6 +20,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+}
+
+.mobile-banner {
+  display: none;
 }
 
 .hero-glow {
@@ -229,41 +234,128 @@
   }
 }
 
-@media (max-width: 992px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
+@media (max-width: 1200px) {
+
+  .hero {
+    height: auto;
   }
+
+}
+
+@media (max-width: 1130px) {
+
+  .hero-title {
+    width: 100%;
+  }
+
+  .navbar-cta {
+    display: none;
+  }
+
+  .navbar-links ul {
+    padding-right: 1em;
+  }
+
+  .hero-title {
+    font-size: 5.4vw;
+  }
+
+  .btn-secondary {
+    display: none;
+  }
+
+  .hero {
+    min-height: 40em;
+  }
+}
+
+
+@media (max-width: 992px) {
+
 
   .hero-content {
     max-width: 100%;
   }
 
   .hero-title {
-    font-size: 3rem;
+    width: 80%;
+    font-size: 5.6vw;
   }
 
   .hero-title .vapor-violet-text {
     font-size: 3.5rem;
   }
 
-  .hero-cta {
-    justify-content: center;
+  .hero-content {
+    flex: 2;
+  }
+}
+
+@media (max-width: 890px) {
+
+  .hero {
+    height: 100%;
+    min-height: 35em;
   }
 
-  .dancer-silhouette {
-    width: 300px;
-    height: 380px;
+  .grid-background {
+    background-position: -4em;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .grid-background {
+    background-position: -8em;
   }
 }
 
 @media (max-width: 768px) {
 
-  .grid-background {
- 
-    background-image: url('../assets/images/banner-mobile.webp');
+  .hero {
+    height: 100vh;
+  }
 
+  .mobile-banner {
+    display: block;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .grid-background {
+    display: none;
+    background-image: url('../assets/images/banner-mobile.webp');
+    background-position: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-title {
+    display: none;
+  }
+
+  .hero-scroll-indicator{
+    display: none;
+  }
+
+  /* .hero{
+    min-height: auto;
+    height: 100vh;
+  } */
+
+}
+
+@media (max-width: 650px) {
+
+  .hero {
+    height: 80vh;
   }
 
 }
