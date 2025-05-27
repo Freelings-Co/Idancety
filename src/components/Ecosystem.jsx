@@ -46,31 +46,31 @@ const Ecosystem = () => {
     },
     {
       name: 'ID+ STUDIO',
-      description: 'Espaço interativo para Ensaios, aulas, cursos, workshops e gravações de conteúdo e aprendizagem',
+      description: 'Espaço de excelência para ensaios, aulas e produção de conteúdo. Estrutura profissional para artistas desenvolverem seu potencial criativo',
       status: 'active',
       icon: 'studio-icon'
     },
     {
       name: 'ID+ MUSICLAB',
-      description: 'Quem dança dança com batidas, sons e vozes. Aqui nossos beatmakers criam o som que vai fazer sua cidade dançar',
+      description: 'Laboratório de criação musical onde a dança encontra sua trilha sonora. Produção de beats e arranjos para artistas da nova geração',
       status: 'active',
       icon: 'musiclab-icon'
     },
     {
       name: 'ID+ MASTER CLASS',
-      description: 'Programa de aulas/cursos e mentorias com foco na construção da sua IDENTIDADE com professores e mentores nacionais e internacionais',
+      description: 'Mentorias e workshops com profissionais renomados. Desenvolvimento técnico e artístico para elevar sua performance',
       status: 'active',
       icon: 'masterclass-icon'
     },
     {
-      name: 'ID+ ONLINE PROGRAM',
-      description: 'Aulas, cursos e mentorias online durante todo o ano para você continuar evoluindo de qualquer lugar do mundo',
+      name: 'ID+ ONLINE',
+      description: 'Plataforma digital com conteúdo exclusivo. Aprenda com os melhores profissionais sem sair de casa',
       status: 'active',
       icon: 'online-icon'
     },
     {
       name: 'ID+ AGENCY',
-      description: 'Agência de talentos conectando os melhores artistas a oportunidades nacionais e internacionais',
+      description: 'Representação artística para talentos excepcionais. Conexão com as melhores oportunidades do mercado nacional e internacional',
       status: 'active',
       icon: 'agency-icon'
     },
