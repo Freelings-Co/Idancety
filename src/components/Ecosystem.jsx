@@ -45,6 +45,36 @@ const Ecosystem = () => {
       icon: 'top100-icon'
     },
     {
+      name: 'ID+ STUDIO',
+      description: 'Espaço de excelência para ensaios, aulas e produção de conteúdo. Estrutura profissional para artistas desenvolverem seu potencial criativo',
+      status: 'active',
+      icon: 'studio-icon'
+    },
+    {
+      name: 'ID+ MUSICLAB',
+      description: 'Laboratório de criação musical onde a dança encontra sua trilha sonora. Produção de beats e arranjos para artistas da nova geração',
+      status: 'active',
+      icon: 'musiclab-icon'
+    },
+    {
+      name: 'ID+ MASTER CLASS',
+      description: 'Mentorias e workshops com profissionais renomados. Desenvolvimento técnico e artístico para elevar sua performance',
+      status: 'active',
+      icon: 'masterclass-icon'
+    },
+    {
+      name: 'ID+ ONLINE',
+      description: 'Plataforma digital com conteúdo exclusivo. Aprenda com os melhores profissionais sem sair de casa',
+      status: 'active',
+      icon: 'online-icon'
+    },
+    {
+      name: 'ID+ AGENCY',
+      description: 'Representação artística para talentos excepcionais. Conexão com as melhores oportunidades do mercado nacional e internacional',
+      status: 'active',
+      icon: 'agency-icon'
+    },
+    {
       name: 'ID+ Voice of Streets (Futuro)',
       description: 'Música urbana e poesia falada',
       status: 'future',

@@ -37,7 +37,7 @@
 
 .about-intro {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -47,6 +47,8 @@
   line-height: 1.8;
   color: var(--text-light);
   font-size: 1.1rem;
+  font-weight: bold;
+
 }
 
 .about-cta {
@@ -127,11 +129,22 @@
   align-items: center;
   padding: 2rem;
 }
+.about-card-front p{
+  font-weight: bold;
+}
 
 .about-card-back {
   transform: rotateY(180deg);
   background: linear-gradient(135deg, rgba(196, 255, 77, 0.1), rgba(186, 140, 255, 0.1));
   border-radius: 10px;
+}
+
+.about-card-back ul {
+  list-style: none;
+}
+
+.about-card-back li {
+  font-weight: bold;
 }
 
 .about-icon {

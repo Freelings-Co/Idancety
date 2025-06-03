@@ -49,6 +49,10 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-bottom: 4rem;
+  min-height: 0;  /* New */
+  min-width: 0;    /* New */
+  width: 100%;     /* New */
+  overflow: visible; /* Changed from hidden to visible */
 }
 
 .ecosystem-program {
@@ -63,6 +67,9 @@
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-out;
+  min-width: 0;  /* New */
+  height: 100%;  /* New */
+  box-sizing: border-box; /* New */
 }
 
 .ecosystem-program.animate {

@@ -2,13 +2,21 @@ import { useEffect } from 'react';
 import './styles/globals.css';
 import './App.css';
 
-// Importando os componentes
+// Importando os componentes existentes
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import HowItWorks from './components/HowItWorks';
 import Impact from './components/Impact';
 import Ecosystem from './components/Ecosystem';
+
+// Novos componentes
+import Studio from './components/Studio';
+import MusicLab from './components/MusicLab';
+import MasterClass from './components/MasterClass';
+import OnlineProgram from './components/OnlineProgram';
+import Agency from './components/Agency';
+
 import Registration from './components/Registration';
 import Investors from './components/Investors';
 import Testimonials from './components/Testimonials';
@@ -50,6 +58,11 @@ function App() {
         <HowItWorks />
         <Impact />
         <Ecosystem />
+        <Studio />
+        <MusicLab />
+        <MasterClass />
+        <OnlineProgram />
+        <Agency />
         <Registration />
         <Investors />
         <Testimonials />
