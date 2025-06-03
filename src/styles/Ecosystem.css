@@ -96,8 +96,7 @@
 .program-icon {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color: rgba(77, 77, 77, 0.2);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,8 +106,7 @@
 .program-icon .icon {
   width: 60px;
   height: 60px;
-  background: url('../assets/images/IDLogo.jpg');
-  border-radius: 50%;
+  background: url('../assets/images/IDLogo3.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
