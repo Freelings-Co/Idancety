@@ -188,6 +188,13 @@
 .copyright {
   color: var(--grid-gray);
   font-size: 0.9rem;
+
+  a{ 
+    color: var(--grid-gray);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
 }
 
 @media (max-width: 992px) {

@@ -130,7 +130,7 @@ const Footer = () => {
             &copy; 2025 IDANCETY | ID+ City of Dancers Todos os direitos reservados
           </div>
           <div className="copyright">
-            Desenvolvido Por Freelings Company 
+            <a href="https://www.freelings.com.br/">Desenvolvido Por Freelings Company</a>
           </div>
         </div>
       </div>
