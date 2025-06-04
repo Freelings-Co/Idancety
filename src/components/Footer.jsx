@@ -22,8 +22,8 @@ const Footer = () => {
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#inscricoes">Inscrição</a></li>
                 <li><a href="#investidores">Parceiros</a></li>
-                <li><a href="#">Termos de uso</a></li>
-                <li><a href="#">Política de privacidade</a></li>
+                {/* <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li> */}
               </ul>
             </div>
             
@@ -31,21 +31,21 @@ const Footer = () => {
               <h4>REDES SOCIAIS</h4>
               <ul className="social-links">
                 <li>
-                  <a href="#" className="social-link instagram">
+                  <a href="https://www.instagram.com/idancety/" className="social-link instagram">
                     <i className="social-icon"></i>
                     Instagram: @idancety
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="social-link tiktok">
                     <i className="social-icon"></i>
                     TikTok: @idancetyglobal
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#" className="social-link youtube">
+                  <a href="https://www.youtube.com/user/IDanceTy" className="social-link youtube">
                     <i className="social-icon"></i>
-                    YouTube: IDANCETY Official
+                    YouTube: IDanceTy
                   </a>
                 </li>
               </ul>
@@ -61,9 +61,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="contact-link whatsapp">
+                  <a href="https://wa.me/+50670854154" className="contact-link whatsapp">
                     <i className="contact-icon"></i>
-                    WhatsApp: +55 (XX) XXXXX-XXXX
+                    WhatsApp: +506 7085 4154
                   </a>
                 </li>
               </ul>

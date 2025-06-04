@@ -66,7 +66,7 @@ const Investors = () => {
               </ul>
             </div>
             
-            <a href="#" className="btn btn-secondary investors-cta">
+            <a href="https://wa.me/+50670854154" className="btn btn-secondary investors-cta">
               QUERO APOIAR ESSE MOVIMENTO
             </a>
           </div>
@@ -125,8 +125,11 @@ const Investors = () => {
               </div>
               
               <div className="investors-card-footer">
-                <a href="#" className="btn btn-outline">
-                  SOLICITAR APRESENTAÇÃO DETALHADA
+                <a href="https://drive.google.com/uc?export=download&id=1uWFrJ-6M0ZpM4WsjHeeyZ7INW5t2w7UK" className="btn btn-outline">
+                  APRESENTAÇÃO DETALHADA Espanhol
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=165OKfqpJqpDE9LVDowLEEjRf7RSV_PcG" className="btn btn-outline">
+                  APRESENTAÇÃO DETALHADA English
                 </a>
               </div>
             </div>

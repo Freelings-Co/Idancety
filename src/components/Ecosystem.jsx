@@ -164,9 +164,13 @@ const Ecosystem = () => {
             <h4 className="impact-areas-title" style={{ marginBottom: '1rem' }}>PRÓXIMO EVENTO EM:</h4>
                       </div>
           
-          <a href="#" className="btn btn-outline ecosystem-cta" style={{ marginTop: '2rem' }}>
+          <a href="https://drive.google.com/uc?export=download&id=1uWFrJ-6M0ZpM4WsjHeeyZ7INW5t2w7UK" className="btn btn-outline ecosystem-cta" style={{ marginTop: '2rem' }}>
             <i className="document-icon"></i>
-            BAIXAR APRESENTAÇÃO PARA INVESTIDORES
+            BAIXAR APRESENTAÇÃO PARA INVESTIDORES Espanhol
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=165OKfqpJqpDE9LVDowLEEjRf7RSV_PcG" className="btn btn-outline ecosystem-cta" style={{ marginTop: '2rem' }}>
+            <i className="document-icon"></i>
+            BAIXAR APRESENTAÇÃO PARA INVESTIDORES English
           </a>
         </div>
         
