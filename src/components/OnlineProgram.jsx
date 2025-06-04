@@ -39,8 +39,8 @@ const OnlineProgram = () => {
     <section id="online-program" className={styles.onlineProgramSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>ID+ ONLINE PROGRAM</h2>
-          <div className={styles.divider}></div>
+          <h2 className="section-title">ID+ ONLINE PROGRAM</h2>
+        
           <p className={styles.subtitle}>
             TODOS OS MESES DO ANO temos aulas, cursos e mentorias para VOCÊ, sua crew ou sua escola.
           </p>
@@ -66,9 +66,7 @@ const OnlineProgram = () => {
         </div>
       </div>
       
-      {/* Decorative Elements */}
-      <div className={`${styles.decorativeElement} ${styles.element1}`}></div>
-      <div className={`${styles.decorativeElement} ${styles.element2}`}></div>
+
     </section>
   );
 };

@@ -64,10 +64,10 @@
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #d8b4fe 0%, #f0abfc 50%, #f9a8d4 100%);
+  background: var(--text-light);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -169,11 +169,11 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .description {
-    font-size: 1.25rem;
+    font-size: 1.10rem;
   }
   
   .tagsContainer {

@@ -1,13 +1,36 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import styles from '../styles/MusicLab.module.css';
 
 const MusicLab = () => {
+
+  const sectionRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+  
+      const elements = sectionRef.current.querySelectorAll('.animate-on-scroll');
+      elements.forEach((el) => observer.observe(el));
+  
+      return () => {
+        elements.forEach((el) => observer.unobserve(el));
+      };
+    }, []);
   return (
-    <section id="musiclab" className={styles.musicLabSection}>
+    <section id="musiclab" className={styles.musicLabSection} ref={sectionRef}>
       <div 
         className={styles.backgroundImage}
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"
+          backgroundImage: "url('/src/assets/images/studiobg.webp')"
         }}
       ></div>
       
@@ -22,8 +45,8 @@ const MusicLab = () => {
             </p>
           </div>
           
-          <div className={`${styles.floatingElement} ${styles.element1}`}></div>
-          <div className={`${styles.floatingElement} ${styles.element2}`}></div>
+          <div className={`${styles.floatingElement} ${styles.element1} animate-on-scroll`}></div>
+          <div className={`${styles.floatingElement} ${styles.element2} animate-on-scroll`}></div>
         </div>
       </div>
     </section>

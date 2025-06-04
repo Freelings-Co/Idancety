@@ -28,7 +28,7 @@ const MasterClass = () => {
           
           <div className={styles.imageContainer}>
             <img 
-              src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+              src="src/assets/images/masterclass.webp" 
               alt="Aula de dança" 
               className={styles.image}
             />
@@ -42,9 +42,7 @@ const MasterClass = () => {
         </div>
       </div>
       
-      {/* Decorative Elements */}
-      <div className={`${styles.decorativeElement} ${styles.element1}`}></div>
-      <div className={`${styles.decorativeElement} ${styles.element2}`}></div>
+    
     </section>
   );
 };

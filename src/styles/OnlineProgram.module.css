@@ -1,6 +1,10 @@
 .onlineProgramSection {
   padding: 8rem 0;
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  
+  background-image:
+    linear-gradient(rgba(77, 77, 77, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 77, 77, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -19,25 +23,6 @@
   margin-bottom: 5rem;
 }
 
-.title {
-  font-size: 3.5rem;
-  font-weight: 900;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #ec4899 0%, #f97316 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1.1;
-}
-
-.divider {
-  width: 8rem;
-  height: 0.25rem;
-  margin: 0 auto 2rem;
-  background: linear-gradient(90deg, #ec4899 0%, #f97316 100%);
-  border-radius: 0.25rem;
-}
-
 .subtitle {
   font-size: 1.5rem;
   color: #e5e7eb;
@@ -54,6 +39,7 @@
 }
 
 .featureCard {
+  cursor: pointer;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
@@ -66,15 +52,15 @@
 .featureCard:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(236, 72, 153, 0.3);
-  box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.1);
+  border-color: rgba(43, 255, 0, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(138, 236, 72, 0.1);
 }
 
 .featureIcon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   display: inline-block;
-  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  background: linear-gradient(150deg, var(--vapor-violet) 0%, var(--cyber-lime) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -109,46 +95,23 @@
 .ctaButton {
   display: inline-block;
   padding: 1rem 3rem;
-  background: linear-gradient(90deg, #ec4899 0%, #f97316 100%);
+  background: transparent;
   color: white;
   font-weight: 600;
   border-radius: 9999px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px -3px rgba(236, 72, 153, 0.3);
-  border: none;
+  border: 1px solid var(--vapor-violet);
+
   cursor: pointer;
   font-size: 1.125rem;
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 25px -5px rgba(236, 72, 153, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  background-color: var(--vapor-violet);
 }
 
-/* Decorative Elements */
-.decorativeElement {
-  position: absolute;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
-  z-index: 1;
-}
-
-.element1 {
-  width: 600px;
-  height: 600px;
-  top: -300px;
-  right: -200px;
-  opacity: 0.1;
-}
-
-.element2 {
-  width: 400px;
-  height: 400px;
-  bottom: -150px;
-  left: -100px;
-  opacity: 0.1;
-}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -161,24 +124,22 @@
   .onlineProgramSection {
     padding: 5rem 0;
   }
-  
-  .title {
-    font-size: 2.5rem;
-  }
-  
+
+
+
   .subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
   }
-  
+
   .featureCard {
     padding: 2rem 1.5rem;
   }
-  
+
   .featureIcon {
     font-size: 2.5rem;
   }
-  
+
   .featureTitle {
     font-size: 1.25rem;
   }

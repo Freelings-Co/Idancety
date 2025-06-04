@@ -9,8 +9,8 @@ const Agency = () => {
       <div className={styles.container}>
         <div className={styles.contentWrapper}>
           <div className={styles.header}>
-            <h2 className={styles.title}>ID+ AGENCY</h2>
-            <div className={styles.divider}></div>
+            <h2 className="section-title">ID+ AGENCY</h2>
+          
           </div>
           
           <div className={styles.contentBox}>
@@ -46,9 +46,7 @@ const Agency = () => {
         </div>
       </div>
       
-      {/* Decorative Elements */}
-      <div className={`${styles.floatingElement} ${styles.element1}`}></div>
-      <div className={`${styles.floatingElement} ${styles.element2}`}></div>
+   
     </section>
   );
 };
