@@ -55,9 +55,9 @@ const Footer = () => {
               <h4>CONTATO</h4>
               <ul className="contact-links">
                 <li>
-                  <a href="mailto:hello@idancety.com" className="contact-link email">
+                  <a href="mailto:cnt360cr@gmail.com" className="contact-link email">
                     <i className="contact-icon"></i>
-                    hello@idancety.com
+                    cnt360cr@gmail.com
                   </a>
                 </li>
                 <li>
