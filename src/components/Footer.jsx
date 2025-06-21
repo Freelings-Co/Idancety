@@ -66,6 +66,12 @@ const Footer = () => {
                     WhatsApp: +506 7085 4154
                   </a>
                 </li>
+                <li>
+                  <a href="https://wa.me/+5511913122001" className="contact-link whatsapp">
+                    <i className="contact-icon"></i>
+                    WhatsApp: +55 11 91312-2001
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
