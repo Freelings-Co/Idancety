@@ -132,7 +132,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="journey-cta animate-on-scroll">
-          <a href="#inscricoes" className="btn btn-primary">
+          <a href="#inscricao" className="btn btn-primary">
             QUERO PARTICIPAR
           </a>
         </div>

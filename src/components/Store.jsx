@@ -152,7 +152,7 @@ const Store = () => {
           <h2 className="final-call-title">"O mundo está esperando por você. Mostre seu ID+."</h2>
           
           <div className="final-call-buttons">
-            <a href="#inscricoes" className="btn btn-primary">PARTICIPAR</a>
+            <a href="#inscricao" className="btn btn-primary">PARTICIPAR</a>
             <a href="https://drive.google.com/uc?export=download&id=192RPrawXiUZfCctW1tsJIexrEXN9yJ-P" className="btn btn-secondary">VER APRESENTAÇÃO Inglês</a>
             <a href="https://drive.google.com/uc?export=download&id=1sergS5UnbZf4OFDVmPczh4lBNpsrZ-QS" className="btn btn-secondary">VER APRESENTAÇÃO Espanhol</a>
             <a href="https://wa.me/+50670854154" className="btn btn-outline">FALE COM A EQUIPE</a>
