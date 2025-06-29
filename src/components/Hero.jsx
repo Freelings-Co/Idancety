@@ -41,7 +41,7 @@ const Hero = () => {
           </h1>
 
           <div className="hero-cta">
-            <a href="#inscricoes" className="btn btn-primary pulse">Quero me inscrever</a>
+            <a href="#inscricao" className="btn btn-primary pulse">Quero me inscrever</a>
             <a href="#sobre" className="btn btn-secondary">Ver o projeto completo</a>
             <a href="#investidores" className="btn btn-outline">Sou investidor</a>
           </div>
