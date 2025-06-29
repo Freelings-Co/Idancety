@@ -34,7 +34,7 @@ const Agency = () => {
               </p>
               
               <div className={styles.buttonsContainer}>
-                <a href="#cadastro" className={styles.primaryButton}>
+                <a href="#inscricao" className={styles.primaryButton}>
                   Quero Fazer Parte
                 </a>
                 <a href="#sobre" className={styles.secondaryButton}>
