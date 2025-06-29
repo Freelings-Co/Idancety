@@ -20,7 +20,7 @@ const Footer = () => {
               <h4>LINKS RÁPIDOS</h4>
               <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#inscricoes">Inscrição</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
                 <li><a href="#investidores">Parceiros</a></li>
                 {/* <li><a href="#">Termos de uso</a></li>
                 <li><a href="#">Política de privacidade</a></li> */}

@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-cta">
-          <a href="#inscricoes" className="btn btn-primary">Participar</a>
+          <a href="#inscricao" className="btn btn-primary">Participar</a>
         </div>
 
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
