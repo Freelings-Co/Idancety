@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/MasterClass.module.css';
+import ImageDance from '../assets/images/masterclass.webp';
 
 const MasterClass = () => {
   return (
@@ -28,7 +29,7 @@ const MasterClass = () => {
           
           <div className={styles.imageContainer}>
             <img 
-              src="src/assets/images/masterclass.webp" 
+              src={ImageDance} 
               alt="Aula de dança" 
               className={styles.image}
             />
