@@ -18,7 +18,7 @@ const Registration = () => {
           
           <div className="registration-button-container">
             <a 
-              href="https://form.typeform.com/to/W8A3v02n" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfVeZH8Fl6BjoIa4BrgHGyHiOXAgI1QbbahgTe7euW34sr3rg/viewform?usp=header" 
               target="_blank" 
               rel="noopener noreferrer"
               className="registration-button"
