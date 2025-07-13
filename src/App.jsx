@@ -7,6 +7,7 @@ import './App.css';
 // Importando os componentes existentes
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+// import TourBanner from './components/TourBanner';
 import About from './components/About';
 import HowItWorks from './components/HowItWorks';
 import Impact from './components/Impact';
@@ -56,6 +57,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        {/* <TourBanner /> */}
         <About />
         <HowItWorks />
         <Impact />

@@ -1,0 +1,576 @@
+/* .tour-banner {
+    padding: 5rem 0;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.tour-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.tour-header::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #8a2be2, #4b0082);
+    margin: 1.5rem auto 0;
+}
+
+.tour-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 1rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tour-title .highlight {
+    color: #ffffff;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #8a2be2, #4b0082);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.tour-dates {
+    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0.9;
+    letter-spacing: 3px;
+    margin-top: 0.5rem;
+}
+
+.tour-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #b19cd9;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.tour-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.tour-image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
+   
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.artist-bio {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: #d9d9d9;
+}
+
+.tour-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.detail-section h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.detail-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8a2be2, #4b0082);
+}
+
+.detail-section p {
+    color: #d9d9d9;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.featured-cities {
+    margin-top: 2rem;
+}
+
+.featured-cities h4 {
+    font-size: 1rem;
+    color: #b19cd9;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.cities-grid span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.price-card.highlight {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(75, 0, 130, 0.1));
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.1);
+}
+
+.price-card h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 0 1rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+}
+
+.price-amount {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+}
+
+.price-conversion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #b19cd9;
+}
+
+.price-conversion span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.price .currency {
+    font-size: 1.2rem;
+    color: #8a2be2;
+    font-weight: 600;
+}
+
+.price .amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.price .period {
+    font-size: 0.9rem;
+    color: #b19cd9;
+    margin-left: 0.3rem;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.price-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #d9d9d9;
+    font-size: 0.95rem;
+}
+
+.price-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #8a2be2;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button.brazil {
+    background: linear-gradient(90deg, #2E8B57, #3CB371);
+    color: white;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.cta-button.costa-rica {
+    background: linear-gradient(90deg, #0033A0, #0056b3);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-button .flag {
+    font-size: 1.5rem;
+}
+
+.cta-button .cta-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.cta-button .cta-text span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.more-info-button {
+    background: transparent;
+    color: #b19cd9;
+    border: 1px solid #b19cd9;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-info-button:hover {
+    background: rgba(177, 156, 217, 0.1);
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: #0f0f1a;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #b19cd9;
+    font-size: 1.8rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.modal-content h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-content h4 {
+    color: #b19cd9;
+    margin: 1.5rem 0 0.8rem;
+    font-size: 1.1rem;
+}
+
+.modal-content ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    color: #d9d9d9;
+    line-height: 1.6;
+}
+
+.modal-content p {
+    margin: 0.5rem 0 1.5rem;
+    color: #d9d9d9;
+    line-height: 1.6;
+}
+
+.cta-section p {
+    color: #b19cd9;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #8a2be2, #4b0082);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #4b0082, #8a2be2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    opacity: 1;
+}
+
+.cta-button span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+.payment-methods {
+    font-size: 0.85rem;
+    color: #888888 !important;
+    margin-top: 1rem !important;
+}
+
+
+@media (max-width: 1024px) {
+    .tour-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .image-wrapper {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-banner {
+        padding: 3.5rem 0;
+    }
+
+    .tour-title {
+        font-size: 2.2rem;
+    }
+
+    .tour-title .highlight {
+        font-size: 2.8rem;
+    }
+
+    .tour-dates {
+        font-size: 1.2rem;
+    }
+
+    .cities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.highlight {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-button {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .cta-button .flag {
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tour-title {
+        font-size: 1.8rem;
+    }
+
+    .tour-title .highlight {
+        font-size: 2.2rem;
+    }
+
+    .tour-dates {
+        font-size: 1rem;
+    }
+
+    .tour-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .price-card {
+        padding: 1.5rem;
+    }
+
+    .price .amount {
+        font-size: 2rem;
+    }
+} */
