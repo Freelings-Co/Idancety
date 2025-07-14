@@ -1,4 +1,5 @@
-/* .tour-banner {
+.tour-banner {
+    
     padding: 5rem 0;
     color: #ffffff;
     position: relative;
@@ -8,6 +9,7 @@
 }
 
 .container {
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -113,7 +115,7 @@
     left: 0;
     right: 0;
     padding: 2rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
     color: white;
     display: flex;
     flex-direction: column;
@@ -127,9 +129,17 @@
 }
 
 .artist-bio {
-    font-size: 0.9rem;
-    opacity: 0.9;
+    font-size: 1.1rem;
+    opacity: 1;
     color: #d9d9d9;
+}
+
+.containerRight {
+    height: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 .tour-details {
@@ -287,6 +297,10 @@
 }
 
 .cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-align: center;
     margin-top: 2.5rem;
 }
@@ -351,11 +365,13 @@
 
 .more-info-button {
     background: transparent;
+    width: 60%;
     color: #b19cd9;
-    border: 1px solid #b19cd9;
+    border: 4px solid #b19cd9;
     border-radius: 50px;
     padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 800;
     margin: 1rem 0;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -368,16 +384,16 @@
 
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    padding: 1rem;
+    padding: 2rem;
     backdrop-filter: blur(5px);
 }
 
@@ -438,8 +454,9 @@
 
 .cta-section p {
     color: #b19cd9;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
 }
 
 .cta-button {
@@ -573,4 +590,4 @@
     .price .amount {
         font-size: 2rem;
     }
-} */
+}
