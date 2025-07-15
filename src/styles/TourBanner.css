@@ -359,6 +359,18 @@
     gap: 1rem;
 
 }
+.see-more-btn {
+    background: linear-gradient(90deg, #000000, #000000);
+    color: white;
+    border: 2px solid #8a2be2;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+}
 
 .cta-button .flag {
     font-size: 1.5rem;
