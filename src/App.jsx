@@ -25,7 +25,7 @@ import Investors from './components/Investors';
 import Testimonials from './components/Testimonials';
 import Store from './components/Store';
 import Footer from './components/Footer';
-// import TourBanner from './components/TourBanner';
+import TourBanner from './components/TourBanner';
 
 function App() {
   useEffect(() => {
@@ -58,7 +58,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* <TourBanner /> */}
+        <TourBanner />
         <About />
         <HowItWorks />
         <Impact />

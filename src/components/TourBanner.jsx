@@ -116,8 +116,8 @@ const TourBanner = () => {
                       <span className="period">/1° LOTE</span>
                     </div>
                     <div className="price-conversion">
-                      <span>≈ $14 USD</span>
-                      <span>≈ ₡7,500 CRC</span>
+                      <span>≈ $80 USD</span>
+                      <span>≈ ₡40.000 CRC</span>
                     </div>
                   </div>
                   <ul>
@@ -136,8 +136,8 @@ const TourBanner = () => {
                       <span className="period">/1° LOTE</span>
                     </div>
                     <div className="price-conversion">
-                      <span>≈ $60 USD</span>
-                      <span>≈ ₡32,000 CRC</span>
+                      <span>≈ $100 USD</span>
+                      <span>≈ ₡50.000 CRC</span>
                     </div>
                   </div>
                   <ul>
