@@ -86,12 +86,12 @@ const TourBanner = () => {
                 className="tour-image"
                 loading="lazy"
               />
-              <div className="image-overlay">
+              {/* <div className="image-overlay">
                 <span className="artist-name">AY "HOLLYWOOD"</span>
                 <span className="artist-bio">
                   Coreógrafo de Beyoncé, Rihanna, Jennifer Lopez e mais
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
 

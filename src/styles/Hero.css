@@ -313,7 +313,8 @@
 @media (max-width: 768px) {
 
   .hero {
-    height: 100vh;
+    align-items: end;
+   height: 100vh;
   }
 
   .mobile-banner {
@@ -343,6 +344,7 @@
     display: none;
   }
 
+ 
   .hero-cta a{
     font-size: 1.4em;
   }
