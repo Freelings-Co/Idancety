@@ -26,6 +26,7 @@ import Testimonials from './components/Testimonials';
 import Store from './components/Store';
 import Footer from './components/Footer';
 import TourBanner from './components/TourBanner';
+import EventCarousel from './components/EventCarousel';
 
 function App() {
   useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
       <main>
         <Hero />
         <TourBanner />
+        {/* <EventCarousel /> */}
         <About />
         <HowItWorks />
         <Impact />
