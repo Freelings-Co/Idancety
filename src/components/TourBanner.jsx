@@ -63,6 +63,63 @@ function ExpandableText() {
 
 const TourBanner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [showFullCalendar, setShowFullCalendar] = useState(false);
+
+     const visibleCities = [
+    { city: "São Paulo", flag: "🇧🇷", dates: "28 a 30 de novembro" },
+    { city: "Rio de Janeiro", flag: "🇧🇷", dates: "21 a 23 de novembro" },
+    { city: "San José", flag: "🇨🇷", dates: "11 de outubro" },
+    { city: "Buenos Aires", flag: "🇦🇷", dates: "12 a 14 de dezembro" },
+    { city: "Assunção", flag: "🇵🇾", dates: "20 de dezembro" },
+  ];
+
+  // Full calendar text to show when expanded
+  const fullCalendarText = (
+    <>
+      <h5>COSTA RICA</h5>
+      <ul>
+        <li>11 de outubro – San José</li>
+        <li>12 de outubro – Cartago</li>
+        <li>17 de outubro – Nosara</li>
+        <li>19 de outubro – Racó</li>
+        <li>24 de outubro – Puerto Viejo</li>
+        <li>25 e 26 de outubro – Experiência VIP no Caribe Costarriquenho</li>
+      </ul>
+
+      <h5>PERU</h5>
+      <ul>
+        <li>31 de outubro – Lima</li>
+        <li>1 e 2 de novembro – Lima e Miraflores</li>
+      </ul>
+
+      <h5>BRASIL</h5>
+      <ul>
+        <li>7 a 9 de novembro – Salvador, Bahia</li>
+        <li>11 e 12 de novembro – Fortaleza</li>
+        <li>13 a 16 de novembro – Brasília e Goiânia</li>
+        <li>21 a 23 de novembro – Rio de Janeiro</li>
+        <li>28 a 30 de novembro – São Paulo</li>
+        <li>5 a 7 de dezembro – Curitiba e Itajaí</li>
+      </ul>
+
+      <h5>ARGENTINA</h5>
+      <ul>
+        <li>12 a 14 de dezembro – Buenos Aires</li>
+      </ul>
+
+      <h5>PARAGUAI</h5>
+      <ul>
+        <li>20 de dezembro – Assunção</li>
+      </ul>
+
+      <h5>ENCERRAMENTO NO RIO DE JANEIRO</h5>
+      <ul>
+        <li>24 de dezembro a 1º de janeiro – Rio de Janeiro</li>
+      </ul>
+    </>
+  );
+
+
   return (
     <section className="tour-banner" id="tour">
       <div className="container">
@@ -108,16 +165,28 @@ const TourBanner = () => {
                   latino-americana.
                 </p>
 
+             
                 <div className="featured-cities">
                   <h4>PRINCIPAIS CIDADES</h4>
                   <div className="cities-grid">
-                    <span>🇧🇷 São Paulo</span>
-                    <span>🇧🇷 Rio de Janeiro</span>
-                    <span>🇨🇷 San José</span>
-                    <span>🇦🇷 Buenos Aires</span>
-                    <span>🇵🇾 Assunção</span>
+                    {visibleCities.map(({ city, flag, dates }) => (
+                      <span key={city}>
+                        {flag} {city} <small>({dates})</small>
+                      </span>
+                    ))}
                     <span>+ MAIS</span>
                   </div>
+                  <button
+                    className="see-calendar-btn"
+                    onClick={() => setShowFullCalendar((v) => !v)}
+                  >
+                    {showFullCalendar ? "Ver menos calendário" : "Ver calendário completo"}
+                  </button>
+                  {showFullCalendar && (
+                    <div className="full-calendar">
+                      {fullCalendarText}
+                    </div>
+                  )}
                 </div>
               </div>
 

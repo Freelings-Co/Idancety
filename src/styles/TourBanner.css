@@ -1,5 +1,5 @@
 .tour-banner {
-    
+
     padding: 5rem 0;
     color: #ffffff;
     position: relative;
@@ -9,7 +9,7 @@
 }
 
 .container {
-    
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -21,6 +21,113 @@
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
+}
+
+
+/* Existing styles assumed, adding styles for new elements */
+
+.featured-cities {
+    margin-top: 1.5rem;
+}
+
+.cities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(0, 0%, 13%);
+}
+
+.cities-grid span {
+
+    padding: 0.3rem 0.7rem;
+
+    cursor: default;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.cities-grid span:hover {
+    background-color: #000000;
+}
+
+.cities-grid small {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #b19cd9;
+    margin-left: 0.3rem;
+    
+}
+
+.see-calendar-btn {
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #4b0082, #8a2be2);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    user-select: none;
+}
+
+.see-calendar-btn:hover {
+    background: #3c0074;
+    transition: 0.3s ease-in-out;
+}
+
+.full-calendar {
+    margin-top: 1rem;
+    background-color: #000000;
+    border: 1px solid #8a2be2;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    max-height: 400px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.full-calendar h5 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: #8a2be2;
+    border-bottom: 1px solid #8a2be2;
+    padding-bottom: 0.2rem;
+}
+
+.full-calendar ul {
+    margin: 0 0 0.8rem 1.2rem;
+    padding: 0;
+    list-style-type: disc;
+}
+
+.full-calendar li {
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cities-grid {
+        justify-content: center;
+    }
+
+    .see-calendar-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .full-calendar {
+        max-height: 250px;
+    }
 }
 
 .tour-header::after {
@@ -83,7 +190,7 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
-   
+
 }
 
 .image-wrapper {
@@ -112,21 +219,21 @@
 /* Scrollbar personalizada */
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #0f0f1a;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: linear-gradient(#18002e, #4b0082);
     border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#8c47bd, #61219c);
-  }
-  
+}
+
 
 .artist-bio {
     font-size: 1.1rem;
@@ -200,7 +307,7 @@
 .cities-grid span {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0rem;
     font-size: 0.95rem;
     color: #ffffff;
     padding: 0.5rem 0;
@@ -310,7 +417,7 @@
     gap: 1rem;
     text-align: center;
     margin-top: 2.5rem;
- 
+
 }
 
 
@@ -337,15 +444,15 @@
 }
 
 .cta-button.brazil {
-    background: linear-gradient(90deg,#4b0082,#8a2be2);
+    background: linear-gradient(90deg, #4b0082, #8a2be2);
     color: white;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-  
-    
+
+
 }
 
 .cta-button.costa-rica {
@@ -359,6 +466,7 @@
     gap: 1rem;
 
 }
+
 .see-more-btn {
     background: linear-gradient(90deg, #000000, #000000);
     color: white;
@@ -406,12 +514,12 @@
     background: rgba(177, 156, 217, 0.1);
 }
 
-.more-box{
+.more-box {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
- 
+
 }
 
 .modal-overlay {
@@ -543,65 +651,72 @@
 
 @media (max-width: 900px) {
     .cta-section {
-      flex-direction: column-reverse;
-      align-items: stretch;
-      gap: 1.5rem;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 1.5rem;
     }
 
-    .cta-section p{
+    .cta-section p {
         margin: 0 auto;
     }
+
     .cta-buttons {
         flex-direction: column;
         gap: 0.7rem;
         margin: 1rem 0;
-      }
-      .cta-button {
+    }
+
+    .cta-button {
         width: 100%;
         font-size: 0.95rem;
         padding: 0.9rem 0.7rem;
         justify-content: center;
-      }
-    .more-info-button {
-      width: 100%;
-      font-size: 0.95rem;
-      padding: 0.8rem 1rem;
     }
 
-    .more-box{
+    .more-info-button {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .more-box {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-     
+
     }
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .cta-section {
-      align-items: stretch;
-      gap: 1.2rem;
-      margin-top: 2rem;
+        align-items: stretch;
+        gap: 1.2rem;
+        margin-top: 2rem;
     }
 
     .cta-button .flag {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
+
     .cta-button .cta-text {
-      font-size: 0.92rem;
+        font-size: 0.92rem;
     }
+
     .more-info-button {
-      width: 100%;
-      font-size: 0.9rem;
-      padding: 0.7rem 0.5rem;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.7rem 0.5rem;
     }
+
     .payment-methods {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+
     .cta-section p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
+}
 
 @media (max-width: 1024px) {
     .tour-content {
