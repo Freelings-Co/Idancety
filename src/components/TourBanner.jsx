@@ -81,7 +81,7 @@ const TourBanner = () => {
         <li>11 de outubro – San José</li>
         <li>12 de outubro – Cartago</li>
         <li>17 de outubro – Nosara</li>
-        <li>19 de outubro – Racó</li>
+        <li>19 de outubro – Jaco</li>
         <li>24 de outubro – Puerto Viejo</li>
         <li>25 e 26 de outubro – Experiência VIP no Caribe Costarriquenho</li>
       </ul>
